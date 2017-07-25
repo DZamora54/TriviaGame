@@ -1,0 +1,33 @@
+h1, h3 {
+	text-align: center;
+}
+
+h1 {
+	padding-top: 30px;
+}
+
+
+#gameArea {
+	background-color: green;
+	margin: 0 auto;
+	height: 90vh;
+	width: 100vh;
+}
+
+#gameContent {
+	text-align: center;
+}
+
+#startStyle {
+	background: red;
+	margin: 100px auto;
+	width: 300px;
+	height: 70px;
+	text-align: center;
+}
+#startDiv {
+  text-align: center;
+}
+.rdo {
+	margin-left: 15px;
+}
