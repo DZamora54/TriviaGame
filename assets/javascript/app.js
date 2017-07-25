@@ -1,6 +1,7 @@
+//questions to be asked in the trivia game
 var questions = [
   {
-   	question: "1st question",
+   	question: "1st question to be asked",
     answers: {
       correctAnswer:"correct answer",
       wrongAnswers: [
@@ -56,6 +57,7 @@ var questions = [
   }
 ]
 
+//timer for time allowed to answer questions
 var timer = {
   time: 5,
   reset: function() {
@@ -77,9 +79,10 @@ var timer = {
   },
 };
 
+//function to add a question to the document from available questions 
 function addQuestions() {
-  var html = "<p>"+questions[0].question+"</p>"+"<button>"+questions[0].answers.correctAnswer+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[0]+"</button>";
-  $("#gameContent").html("<p>"+questions[0].question+"</p>"+"<button>"+questions[0].answers.correctAnswer+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[0]+"</button>");
+  var html = "<p>"+questions[0].question+"</p>"+"<button>"+questions[0].answers.correctAnswer+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[0]+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[1]+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[2]+"</button><br>";
+  $("#gameContent").html("<p>"+questions[0].question+"</p>"+"<button>"+questions[0].answers.correctAnswer+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[0]+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[1]+"</button><br>"+"<button>"+questions[0].answers.wrongAnswers[2]+"</button><br>");
 }
 
 
@@ -104,5 +107,5 @@ $(document).ready(function() {
 //if timer = 0 show answer and move to next question
 //if user picks wrong answer show correct answer and move to next question
 //if user picks correct answer congratulate and move to next question
-//when x number of questions have passed show correct wrong and unanswered and ask if user wants to restart game
+//when x number of questions have passed show correct, wrong and unanswered and ask if user wants to restart game
 
